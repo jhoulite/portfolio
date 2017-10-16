@@ -1,0 +1,939 @@
+* {
+  outline: none !important;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  letter-spacing: 0.3px;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #666;
+  background-color: #D1f0f2;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+.text-primary {
+  color: #26bec9;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+p,span {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  font-size: 1.4rem;
+}
+a {
+  color: #666;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #666;
+}
+.text-danger {
+  color: #ef7a70;
+}
+.btn:hover {
+  box-shadow: 0 0 100px rgba(0,0,0,.1) inset;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+  background: rgb(251,176,59); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(251,176,59,1) 0%, rgba(255,116,66,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(251,176,59,1) 0%,rgba(255,116,66,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(251,176,59,1) 0%,rgba(255,116,66,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border: none;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.wave-light,.wave-deep {
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707080231_mQRdE/png');
+  height: 25px;
+  position: absolute;
+  bottom: -23px;
+  z-index: 3;
+}
+.wave-deep{
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_ZIUnF/png');
+}
+.section-title {
+  transition: .3s ease;
+  display: inline-block;
+}
+.section-title:hover {
+  transform: scale(1.1);
+  transition: .3s ease;
+}
+.section-title span {
+  padding: 10px 20px;
+  background: #2BA4BC;
+  border-radius: 4px;
+  color: #fee268;
+  display: inline-block;
+  font-size: 1.8rem;
+  vertical-align: bottom;
+}
+.section-title::before {
+  content: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074714_EEpea/png');
+  display: inline-block;
+  margin-right: 2px;
+}
+.section-title::after{
+  content: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074714_awEvV/png');
+  display: inline-block;
+  margin-left: 5px;
+}
+.mgr-fix {
+  margin-right: 0 !important;
+}
+
+.to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.8rem;
+  background: rgba(102,102,102,.3);
+  border-radius: 4px;
+  right: 30px;
+  bottom: 20px;
+  opacity: 0;
+  transition: .3s ease;
+  z-index: 5;
+  line-height: 50px;
+}
+.to-top i{
+  line-height: 50px;
+}
+.to-top.show {
+  opacity: 1;
+  transition: .3s ease;
+}
+header {
+  transition: .3s ease;
+}
+header.shadow {
+  box-shadow: 0px 3px 3px rgba(0,0,0,.15);
+  transition: .3s ease;
+}
+.main-menu {
+  height: 60px;
+  background-color: #D1F0F2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.main-menu a {
+  display: inline-block;
+  color: #666;
+  font-size: 1.6rem;
+  padding: 15px;
+  margin-top: 5px;
+}
+.main-menu a:hover {
+  color: #26bec9;
+}
+.main-menu img {
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/*main sectioin*/
+section.main-section {
+  margin-top: 80px;
+  background:url("https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_N7kuX/png") repeat #D1f0f2;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+section.main-section .main-title img {
+  width: 400px;
+}
+.main-section .main-banner img {
+  height: calc( 100vh / 2.5 );
+  position: relative;
+}
+.main-section .active-date {
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: #138184;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+.main-section p {
+  font-size: 1.8rem;
+}
+.main-section button.btn {
+  border-radius: 100px;
+  font-size: 16px;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  margin: auto;
+  margin-top: 30px;
+}
+.main-section button.btn:hover {
+  box-shadow: 0 0 100px rgba(0,0,0,.1) inset;
+}
+.main-section button i {
+  margin-right: 5px;
+}
+
+/*sub-banner*/
+section.sub-banner {
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_N7kuX/png') repeat #BEE7E8;
+  padding-top: 75px;
+  position: relative;
+}
+.sub-banner .section-title {
+  padding-bottom: 60px;
+}
+
+.sub-banner .map {
+  width: 640px;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0 180px 0;
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074715_hqrtv/png') no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.sub-banner .map p {
+  color: #fff;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+.sub-banner .bird {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  animation: bird 4s;
+  -moz-animation:bird 4s;
+  -webkit-animation:bird 4s;
+  -o-animation:bird 4s;
+  animation-iteration-count: infinite;
+  animation-delay: .2s;
+}
+@keyframes bird {
+  0% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.sub-banner .bird img {
+  width: 120px;
+}
+.sub-banner .hotballon {
+  position: absolute;
+  left: 150px;
+  top:150px;
+  animation: hotballon 3s;
+  -moz-animation: hotballon 3s;
+  -webkit-animation: hotballon 3s;
+  -o-animation: hotballon 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes hotballon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.sub-banner .hotballon img {
+  width: 55px;
+}
+/*Country Section*/
+section.country-section {
+  position: relative;
+}
+section.country-section ul.country-tabs {
+  height: 60px;
+  background: #26bec9;
+}
+ul.country-tabs.list-inline {
+  margin-right: 0px !important;
+}
+ul.country-tabs li a {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  display: inline-block;
+}
+ul.country-tabs li {
+  margin-top: 15px;
+  margin-right: 8px;
+}
+ul.country-tabs li:last-child {
+  margin-right: 0;
+}
+ul.country-tabs li img.flag{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  margin-right: 10px;
+}
+ul.country-img li a:hover {
+  cursor: pointer;
+}
+.country-section div.country-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+}
+.country-img h3 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0,0,0,.7);
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.country-img .gradient {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: -webkit-linear-gradient(top, rgba(209,240,242,0), rgba(209,240,242,1) );
+  background: -o-linear-gradient(top, rgba(209,240,242,0), rgba(209,240,242,1));
+  background: linear-gradient(top, rgba(209,240,242,0), rgba(209,240,242,1) );
+  bottom: -1px;
+  z-index: 1;
+}
+/*Owl Carousel*/
+.owl-carousel {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+  display: block;
+}
+.owl-stage-outer {
+  width: 100% !important;
+  height: auto !important;
+}
+.owl-stage {
+  margin: auto;
+}
+.owl-carousel a:hover .item {
+  opacity: .9;
+  box-shadow: none;
+  transition: .3s ease;
+}
+.owl-nav {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,.2) !important;
+  opacity: 0.7 !important;
+  border-radius: 100% !important;
+  line-height: 40px;
+  padding: 0!important;
+  margin: 0!important;
+}
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  opacity: 1;
+  transition: .3s ease;
+}
+.owl-nav .owl-prev {
+  left: -50px;
+}
+.owl-nav .owl-next {
+  right: -50px;
+}
+.owl-nav i {
+  line-height: 40px;
+}
+.owl-item .item {
+  position: relative;
+  background-color: #26bec9;
+  border-radius: 4px;
+  width: 100%;
+  height: 240px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  background-position: center center !important;
+  background-size: cover !important;
+  transition: .3s ease;
+  margin-bottom: 2px !important;
+}
+.owl-item .item:last-child {
+  margin-bottom: 0;
+}
+.owl-item .item .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: rgba(0,0,0,.65);
+  z-index: 2;
+  border-radius: 0 0 4px 4px;
+}
+.owl-dots {
+  margin-top: 15px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #26bec9;
+}
+.date-carousel .owl-stage-outer {
+  height: auto;
+}
+.date-carousel .owl-nav {
+  top: 225px;
+}
+.date-carousel .owl-dots {
+  margin-right: 10px;
+}
+.date-carousel .item{
+  height: auto;
+}
+.date-carousel .pro-img {
+  width: 100%;
+  height: 200px;
+  background-position: center center !important;
+  background-size: cover !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.date-carousel .pro-name {
+  background-color: #fff;
+  padding: 20px 15px;
+  font-size: 1.4rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/*Term and Condition*/
+section.condition{
+  background: #fff;
+  padding-top: 75px;
+}
+section.condition a.kr-blog {
+  color: #26bec9;
+}
+ul.condition-list {
+  margin-top: 30px;
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+ul.condition-list li {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+ul.condition-list li a {
+  color: #26bec9;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed #26bec9;
+}
+.condition hr {
+  color: #eee;
+  margin-top: 25px;
+}
+.condition img.logo{
+  height: 100px;
+}
+.condition h5 {
+  text-align: left;
+}
+ul.sns {
+  display: inline-block;
+  margin-left: 20px;
+}
+ul.sns li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #eee;
+  color: #26bec9;
+  font-size: 1.6rem;
+  line-height: 40px;
+  display: inline-block;
+}
+ul.sns li a i {
+  line-height: 40px;
+}
+.condition .bg-city {
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_Krx4i/png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  width: 100%;
+  height: 120px;
+  margin-top: 60px;
+}
+/*Limit Section*/
+section.limit-section {
+  padding-top: 75px;
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_N7kuX/png'),url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074538_8E7Vg/png'),rgba(38,190,201,.7);
+  background-position: left top, bottom left;
+  background-repeat: repeat,no-repeat;
+  background-size: auto,contain;
+  padding-bottom: 50px;
+}
+.limit-section .caption {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.8);
+}
+.limit-section .caption a {
+  color: #fee269;
+}
+.limit-section .caption i {
+  margin: 0 5px;
+}
+.limit-section .caption ul {
+  color: #666;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  text-shadow: none;
+  font-size: 1.5rem;
+  padding: 30px 15px;
+  border-radius: 4px;
+}
+.limit-section .caption ul li {
+  margin-top: 10px;
+}
+.limit-section .caption ul b {
+  color: #333;
+}
+.limit-section .caption ul .text-danger {
+  text-shadow: none;
+  margin-top: 20px;;
+}
+.limit-section .caption ul span.text-danger,
+.limit-section .caption ul a.text-danger {
+  color: rgba(238, 122, 112,.8);
+}
+.limit-section .caption ul a {
+  text-decoration: underline;
+}
+.limit-section .caption ul a:hover {
+  color: #ef7a70;
+}
+.limit-section .rule-area {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,.4);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+.limit-section .rule-area ul li {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 24px;
+}
+.limit-section .rule-area ul li:last-child {
+  margin-bottom: 0px;
+}
+.limit-section .rule-area ul li span {
+  background-color: #fff;
+  padding-right: 5px;
+}
+.limit-section .rule-area ul li a {
+  color: #26bec9;
+  font-weight: 700;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding-bottom: 2px;
+  text-decoration: underline;
+}
+.limit-section .rule-area ul li a:hover {
+  color: #138184;
+}
+a.kr-blog {
+  color: #fee285;
+  text-decoration: underline;
+}
+.rule-area ul.buy-rule li {
+  background: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074710_ap8ZJ/png');
+  background-position:left center;
+  background-repeat: repeat-x;
+}
+.rule-area ul.give-rule li::before{
+  content:url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074712_Pu8nu/png');
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: -1px;
+  width: 20px;
+  height: 10px;
+}
+.rule-area ul.give-rule li {
+  line-height: 24px;
+}
+.limit-section .hotballon-single,
+.limit-section .hotballon-double{
+  position: absolute;
+}
+.limit-section .hotballon-single {
+  left: -60px;
+  top: 0;
+}
+.limit-section .hotballon-double {
+  right: -65px;
+  bottom: -60px;
+  z-index: 1;
+}
+.limit-section .hotballon-single img {
+  width: 30px;
+}
+.limit-section .hotballon-double img {
+  width: 60px;
+}
+/*Date Tabs Section*/
+section.date-tabs-section {
+  background: #BEE7E8;
+  position: relative;
+}
+ul.date-tabs li {
+  background: #fff;
+  margin-right: -8px;
+  border: 1px solid #2BA4BC;
+  overflow: hidden;
+  padding: 0;
+}
+ul.date-tabs li:first-child{
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+ul.date-tabs li:last-child{
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+ul.date-tabs li a {
+  padding: 7px 15px;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: #2BA4BC;
+  margin: 0;
+}
+ul.date-tabs li.active {
+  background: #2ba4bc;
+}
+ul.date-tabs li.active a {
+  color: #fff;
+}
+.date-carousel .item {
+  position: relative;
+}
+.date-carousel .item .overlay.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(38,190,201,.6);
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+}
+.date-carousel .item .overlay.coming-soon::before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+}
+.date-carousel .item .overlay.exchange-end {
+  position: absolute;
+  top: 0;
+  left: 0
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.7);
+  font-weight: 700;
+  font-size: 2rem;
+  color: #333;
+  border-radius: 4px;
+  text-align: center;
+}
+.date-carousel .item .overlay.exchange-end::before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+}
+/*Footer*/
+footer {
+  height: 50px;
+  background-color:#999;
+  color: #fff;
+  line-height: 50px;
+  font-size: 1.4rem;
+}
+@media screen and (max-width:767px) {
+  /*Set Top*/
+  .to-top {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 35px;
+    right:10px;
+  }
+  .to-top i {
+    line-height: 35px;
+  }
+  .section-title span {
+    font-size: 1.3rem;
+  }
+  .limit-section .caption ul {
+    font-size: 1.3rem;
+  }
+  ul.date-tabs {
+    white-space: nowrap;
+    margin-left: 5px;
+  }
+  ul.date-tabs li:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  ul.date-tabs li:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  ul.date-tabs li {
+    border: none !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    margin-left: 8px !important;
+  }
+  /*Setting Menu*/
+  #openMenu {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .main-menu ul {
+    background: rgba(43,164,188,.95);
+    position: fixed;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    right: -100%;
+    transition: .2s ease;
+  }
+  .main-menu ul li {
+    display: block;
+  }
+  .main-menu ul li a {
+    color: #fff;
+  }
+  .main-menu ul li a:hover {
+    color: #FEE269;
+  }
+  .main-menu ul.show {
+    right: 0;
+    transition: .2s ease;
+  }
+  /*Set Main Banner*/
+  section.main-section .main-title {
+    margin-top: 30px;
+  }
+  section.main-section .main-title img {
+    width: 100%;
+    max-width: 320px;
+    margin-left: 15px;
+  }
+  section.main-section .main-banner img {
+    width: 100%;
+    height: auto !important;
+  }
+  /*Set Map*/
+  .sub-banner .section-title {
+    padding-bottom: 40px;
+  }
+  .sub-banner .map {
+    width: 550;
+    padding-bottom: 100px;
+    padding-top: 120px;
+  }
+  .sub-banner .map p {
+    margin-top: -60px;
+    font-size: 1.4rem;
+  }
+
+
+  /*Set Country Tabs*/
+  section.country-section ul.country-tabs {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  section.country-section ul.country-tabs li:first-child {
+    margin-left: 15px;
+  }
+  section.country-section ul.country-tabs li:last-child {
+    margin-right: 15px;
+  }
+
+  /*Setting Buy-Rule*/
+  .rule-area ul.buy-rule li{
+    background: none;
+    margin-bottom: 5px;
+  }
+  .rule-area ul.buy-rule li.visible-xs-block {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+  }
+  .rule-area ul.buy-rule li.visible-xs-block::before {
+    content: url('https://image.kkday.com/image/get/s1.kkday.com/campaign_306/20170707074712_Pu8nu/png');
+    display: inline-block;
+    width: 20px;
+    margin-top: -5px;
+    margin-right: 5px;
+  }
+  .rule-area ul.buy-rule li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  /*Set Owl Navs*/
+  .owl-carousel .owl-nav {
+    display: none !important;
+  }
+
+  /*Set Rule Area*/
+  .rule-area {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /*Set Logo Area*/
+  section.condition h5 {
+    text-align: center;
+  }
+  section.condition .logo {
+    width: 120px;
+    height: auto;
+  }
+  section.condition ul.sns {
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  section.condition ul.sns li {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width:580px) {
+  section.main-section {
+    min-height: auto;
+    height: auto;
+    padding-bottom: 75px;
+  }
+  .sub-banner .map{
+    width: 400px;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width:768px) {
+  .sub-banner .map p{
+    padding: 0;
+  }
+  .country-section div.country-img {
+    height: 325px;
+  }
+  .country-section div.country-img.hk-img,
+  .country-section div.country-img.my-img{
+    background-position: center bottom !important;
+  }
+  .country-section div.country-img.th-img{
+    background-position: center top !important;
+  }
+  .country-carousel .owl-item .item {
+    height: 350px;
+  }
+  .country-carousel .owl-nav {
+    top: 200px;
+  }
+  .date-carousel .owl-item .item .pro-img {
+    height: 300px;
+  }
+}
+@media screen and (max-width:380px) {
+  .sub-banner .map{
+    width: 350px;
+    padding-top: 80px;
+  }
+}
+/*set absolute img */
+@media screen and (min-width:768px ) and (max-width: 1199px) {
+  .sub-banner .hotballon {
+    left: 5%;
+  }
+  .sub-banner .bird {
+    right: 5%;
+  }
+}

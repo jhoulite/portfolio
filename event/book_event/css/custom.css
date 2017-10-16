@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family:'Roboto','Hiragino Sans GB','Microsoft YaHei';
+  background-color: #333;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ccc;
+  line-height: 1.7 !important;
+  scroll-behavior: smooth;
+}
+
+a, a:visited, a:hover,a:focus {
+  text-decoration: none;
+  color: #EEE8AA;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2, h3, h4, h5 {
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #EEE8AA;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #EEE8AA;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+i {
+  margin-left: 5px;
+}
+
+/*btn*/
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #eee8aa;
+  border-radius: 30px;
+}
+.btn-default {
+  background-color: transparent;
+  border-color: #eee8aa;
+  transition: .3s ease;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+  background-color: rgba(51,51,51,.7) !important;
+  text-shadow: 0px 1px 2px rgba(0,0,0,.9);
+  color: #fff;
+  border-color: #eee8aa;
+  transition: .3s ease;
+}
+.text-primary {
+  color: #eee8aa;
+}
+.text-light {
+  color: #fff;
+  text-shadow: 0px 0px 2px rgba(0,0,0,.9);
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+footer {
+  background-color: #111;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.img-set {
+  position: relative;
+  width: 100%;
+}
+
+/*Content*/
+header {
+  height: 50px;
+  background-color: rgba(51,51,51,.95);
+  position: fixed;
+  box-shadow: 0px 2px 2px rgba(0,0,0,.9);
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+header img {
+  width: 165px;
+  margin-top: 12px;
+}
+header ul li {
+  display: inline-block;
+
+}
+header ul li a {
+  display: block;
+  line-height: 50px;
+  padding: 0px 15px;
+}
+header ul li:last-child a {
+  padding-right: 0px;
+}
+header .visible-xs {
+  line-height: 50px;
+}
+header .visible-xs i {
+  font-size: 2rem;
+  line-height: 50px;
+}
+section h2 {
+  border-bottom: 1px solid #eee8aa;
+  padding-bottom: 10px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,.9);
+}
+.main-banner {
+  height: 400px;
+  background-color: #111;
+  background-image: url('../img/main-banner.png');
+  background-position: left top;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.main-banner img{
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.main-banner h2 {
+  border-bottom: none;
+  text-shadow: none;
+}
+
+.book-about {
+  background: url('../img/section-bg.jpg') center center no-repeat fixed;
+}
+.book-about .book-content > div {
+  margin-top: 40px;
+}
+.book-about .booking-title {
+  margin-top: 50px;
+}
+
+.read-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url('../img/read-bg.jpg') top left no-repeat fixed;
+}
+.read-content .read-text {
+  background-color: #eee;
+  padding: 0px;
+}
+.read-content .read-text h4 {
+  color: #111;
+  font-weight: bold;
+  padding: 30px 0px 70px 0px;
+}
+.read-content .read-text p {
+  color: #333;
+}
+.read-content .read-text .next-btn {
+  font-size: 1.5rem;
+  color: #B8860B;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+/*文章輪播修正語法*/
+.carousel-fade .carousel-inner .item {
+	transition-property: opacity;
+  height: 460px;
+  padding: 40px 25px;
+}
+.carousel-indicators {
+  bottom:0px;
+  margin-bottom: 0px;
+  text-align: left;
+  left:0px;
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+.carousel-indicators li {
+  background-color: #ccc;
+  border: none;
+}
+.carousel-indicators li.active {
+  background-color: #999;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+   opacity: 0;
+   transition: 1s;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*文章輪播修正語法結束*/
+
+.author .author-content {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.author .persona {
+  border-radius: 100%;
+}
+.author .author-text{
+  margin-top: 30px;
+}
+.author .main-text {
+  padding-left: 0px;
+}
+.author .book-area {
+  border-top: 1px solid #666;
+  padding-top: 40px;
+}
+/*Media query*/
+@media (min-width:768px) and (max-width:991px) {
+  .main-banner {
+    height: 300px;
+  }
+  .main-banner img {
+    width: 330px;
+    float: right;
+    padding-right: 60px;
+    padding-top: 80px;
+  }
+  .main-banner h2 {
+    float: right;
+    padding-right: 60px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width:768px) and (max-width:950px) {
+  .author .author-text {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width:767px) {
+  h2 {
+    color: #EEE8AA;
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    color: #EEE8AA;
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  header nav ul {
+    background-color:rgba(17,17,17,.8);
+    position: fixed;
+    z-index: 10;
+    right: -100%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 25px 25px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,.9);
+    transition: .3s;
+  }
+  .active {
+    right: 0;
+    transition: .3s;
+  }
+  header nav ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ;
+    filter: blur(10px);
+    z-index: -1;
+    margin: -20px;
+  }
+  header nav ul li {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 10px 5px;
+  }
+  .main-banner{
+    height: 200px;
+    background-position: left top;
+    background-size: cover;
+  }
+  .main-banner img{
+    width: 200px;
+    padding-top: 60px;
+    float: right;
+  }
+  .main-banner h2 {
+    font-size: 1.3rem;
+    float: right;
+    margin-top: 5px;
+  }
+  .book-about .book-content > div{
+    margin-top: 40px;
+  }
+  .book-about .text-light.mt-20 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .booking-title,.booking-btn {
+    text-align: center;
+  }
+  .booking-title {
+    margin-top: 40px!important;
+  }
+  .read-content .read-text {
+    margin-top: 20px;
+  }
+  .author .col-xs-12 {
+    text-align: center;
+  }
+  .book-area div.col-md-6.col-sm-6.col-xs-12 {
+    margin-top: 30px;
+  }
+}
